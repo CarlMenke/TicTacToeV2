@@ -1,0 +1,174 @@
+body{
+    display:grid;
+    grid-template:160px 300px 100px 1fr/50px 300px 100px 1fr;
+    grid-template-areas:
+    "header header header header "
+    ". board . rside";
+    background-color:rgb(0, 0, 0);
+    font-family:Courier, monospace;
+}
+header{
+    display:inline;
+    grid-template-columns:120px 2fr 1fr;
+    align-items:stretch;
+    justify-content: center;
+    grid-area: header;
+    font-size:40px;
+    color:white;
+    text-align:center;
+}
+.rightSide{
+    display:grid;
+    grid-area: rside;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    color:white;
+    font-size:20px;
+}
+#scoreBoard{
+    display:grid;
+}
+#resetButton{
+    justify-self:center;
+    padding:30px;
+    font-size: 45px;
+}
+#scoreBoard{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+#xScore{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+}
+#xScoreConst{
+
+}
+#xScoreChange{
+    align-self:center;
+    font-weight:bold;
+}
+
+#oScore{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+#oScoreConst{
+
+
+}
+#oScoreChange{
+    align-self:center;
+    font-weight:bold;
+    
+}
+.boldText{
+    font-weight:bold;
+}
+#winMessage{
+    grid-column:2/span 1;
+    grid-row:3/span 1;
+    color:white;
+    font-size:35px;
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+    padding:50px;
+}
+.container{
+    display:grid;
+    grid-template:100px 100px 100px / 100px 100px 100px;
+    align-items:stretch;
+    grid-area:board;
+    justify-content:space-between;
+    text-align:center;
+}
+.Unclicked{
+    color:rgba(255, 254, 254,0);
+    grid-row: auto;
+    text-align:center;
+    list-style:none;
+    padding:10px;
+    font-size : 70px;
+    align-items:stretch;
+}
+.HoveredOver{
+    color:rgba(255, 255, 255, 0.566);
+    grid-row: auto;
+    text-align:center;
+    padding:10px;
+    font-size : 70px;
+}
+.Clicked{
+    color:rgb(255, 255, 255);
+    grid-row: auto;
+    text-align:center;
+    list-style:none;
+    padding:10px;
+    font-size : 70px;
+}
+.a1{
+    border-right: 2px solid rgb(214, 214, 214);
+    border-bottom: 2px solid rgb(214, 214, 214);
+    text-align:center;
+    font-size : 70px;
+}
+.a2{
+    border-right: 2px solid rgb(214, 214, 214);
+    border-bottom: 2px solid rgb(214, 214, 214);
+    border-left: 2px solid rgb(214, 214, 214);
+    text-align:center;
+    font-size : 70px;
+}
+.a3{
+    border-bottom: 2px solid rgb(214, 214, 214);
+    border-left: 2px solid rgb(214, 214, 214);
+    text-align:center;
+    font-size : 70px;
+}
+.b1{
+    border-top:2px solid rgb(214, 214, 214);
+    border-right: 2px solid rgb(214, 214, 214);
+    border-bottom: 2px solid rgb(214, 214, 214);
+    text-align:center;
+    font-size : 70px;
+}
+.b2{
+    border-top:2px solid rgb(214, 214, 214);
+    border-right: 2px solid rgb(214, 214, 214);
+    border-bottom: 2px solid rgb(214, 214, 214);
+    border-left: 2px solid rgb(214, 214, 214);
+    text-align:center;
+    font-size : 70px;
+}
+.b3{
+    border-top:2px solid rgb(214, 214, 214);
+    border-bottom: 2px solid rgb(214, 214, 214);
+    border-left: 2px solid rgb(214, 214, 214);
+    text-align:center;
+    font-size : 70px;
+}
+.c1{
+    border-top:2px solid rgb(214, 214, 214);
+    border-right: 2px solid rgb(214, 214, 214);
+    text-align:center;
+    font-size : 70px;
+}
+.c2{
+    border-top:2px solid rgb(214, 214, 214);
+    border-right: 2px solid rgb(214, 214, 214);
+    border-left: 2px solid rgb(214, 214, 214);
+    text-align:center;
+    font-size : 70px;
+}
+.c3{
+    border-top:2px solid rgb(214, 214, 214);
+    border-left: 2px solid rgb(214, 214, 214);
+    text-align:center;
+    font-size : 70px;
+}
+
